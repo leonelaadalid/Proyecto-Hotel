@@ -1,0 +1,50 @@
+<style>
+
+
+    #scrollview-home .photo {
+        display: inline-block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .photo1 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/img/slide_02.jpg");
+    }
+
+    .photo2 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/img/slide_03.jpg");
+    }
+
+    .photo3 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/img/slide_04.jpg");
+    }
+
+    .photo4 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/img/slide_05.jpg");
+    }
+
+    .photo5 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/img/slide_06.jpg");
+    }
+
+    .photo6 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/img/slide_07.jpg");
+    }
+
+    .photo7 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/slide_7.jpg");
+    }
+
+    .photo8 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/img/slide_11.jpg");
+    }
+
+    .photo9 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/slide_10.jpg");
+    }
+
+    .photo10 {
+        background-image: url("https://alejandraadalid.github.io/HotelBah/img/slide_13.jpg");
+    }
+</style>

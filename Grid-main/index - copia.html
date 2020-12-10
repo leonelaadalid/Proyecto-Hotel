@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title></title>
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.2.714/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.2.714/styles/kendo.default.min.css">
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://kendo.cdn.telerik.com/2016.2.714/js/kendo.all.min.js"></script>
+
+    
+
+</head>
+<body>
+
+        <div id="example">
+            <table id="grid">
+                <colgroup>
+                    <col />
+                    <col />
+                    <col style="width:110px" />
+                    <col style="width:120px" />
+                    <col style="width:130px" />
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th data-field="Capacidad">Tipo de habitación</th>
+                        <th data-field="Superficie">Superficie de la habitación </th>
+                        <th data-field="Balcón">Balcón</th>
+                        <th data-field="Precio">Caracteritica</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dos personas</td>
+                        <td>Suite</td>
+                        <td>45 m² </td>
+                        <td>Si</td>
+                        <td>Vistas al lago Nahuel Huapi</td>
+                    </tr>
+                    <tr>
+                        <td>Cuatro personas</td>
+                        <td>Departamento (4 adultos)</td>
+                        <td>48 m²</td>
+                        <td>Si</td>
+                        <td>vistas al lago Nahuel Huapi</td>
+                    </tr> 
+                    <tr>
+                        <td>Dos adultos , un niño</td>
+                        <td>Estudio con vistas al jardín</td>
+                        <td>No</td>
+                        <td>24 m²</td>
+                        <td>Cuenta con zona de estar.</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <script>
+                $(document).ready(function() {
+                    $("#grid").kendoGrid({
+                        height: 550,
+                        sortable: true
+                    });
+                });
+            </script>
+        </div>
+
+</body>
+</html>
+ 

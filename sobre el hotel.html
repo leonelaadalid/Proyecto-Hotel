@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dobro dosli u najbolji kafic na svetu">
+    <meta name="keywords" content="Kafic">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2020.3.1021/styles/kendo.default-v2.min.css" />
+
+    <script src="https://kendo.cdn.telerik.com/2020.3.1021/js/jquery.min.js"></script>
+    
+    
+    <script src="https://kendo.cdn.telerik.com/2020.3.1021/js/kendo.all.min.js"></script>
+
+
+    <title>HOTEL Bahía Manzano - Sobre el hotel</title>
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+                <h1 class="logo"><a href="index.html">HOTEL Bahía Manzano</a></h1>
+                <ul>
+                    <li><a  href="index.html">Inicio</a></li>
+                    <li><a class="current" href="sobre el hotel.html">Sobre el Hotel</a></li>
+                    <li><a href="contact.html">Contacto</a></li>
+                    <li><a href="Reserva.html">Reserva HOY</a></li>
+                   <li><a href="Habitaciones.html">Habitaciones</a></li>
+
+                </ul>
+              </div>
+            </nav>  
+    </header>
+   <section id="about-info" class="bg-light py-3">
+       <div class="container">
+           <div class="info-left">
+               <h1 class="l-heading"> <span class="text-primary">Sobre</span> nuestro Hotel </h1>
+
+               <p> Bahía Manzano Resort está ubicado en un punto estratégico de la Región de los Lagos de la Patagonia Argentina: 
+                   se sitúa a 5 minutos de Villa La Angostura, a 40 de Bariloche, a una hora y media de San Martín de los Andes 
+                   (por circuito Siete Lagos) y a media hora del paso a Chile Cardenal Samoré. Además, muy cerca de Bahía Manzano se encuentra
+                    el exclusivo Centro de Esquí Cerro Bayo (a cinco minutos) y el legendario Bosque de Arrayanes 
+                    (a 40 minutos por tierra o navegando por el lago Nahuel Huapi.</p>
+
+
+               
+                </div>
+                <div class="info-right">
+                    <img src="./img/photo-2.jpg" alt="Hotel">
+                </div>
+            </div>
+        </section>
+        <div class="clr"></div>
+   </section>
+   <div class="clr"></div>
+
+   <section id="testimonials" class="py-3">
+    <div class="container">
+       <h2 class="l-heading ">UBICACIÓN</h2>
+       
+       <div class="testimonial bg-primary">
+        <img src="./img/person-1.jpg" alt="Samanta">
+        <p>Dirección: Aljaba 205 Puerto Manzano, Q8407 Villa La Angostura, Neuquén</p>
+            <p>Teléfono: 011 4300-0411</p>
+             <p>Cuenta con unidades tipo aparts y cabañas para 2, 4, 6 y hasta 8 personas, todas equipadas e ideales para familias.</p>
+
+    </div>
+
+     
+     <p>
+
+
+        <div>
+            <section>
+             <div id="example">
+               
+               <div id="map"></div>
+               
+               <script>
+                   function createMap() {
+                       $("#map").kendoMap({
+                           center: [ -40.799093, -71.597677 ],
+                           zoom: 5,
+                           layers: [{
+                               type: "tile",
+                               urlTemplate: "http://#= subdomain #.tile.openstreetmap.org/#= zoom #/#= x #/#= y #.png",
+                               subdomains: ["a", "b", "c"],
+                               attribution: "&copy; <a href='http://osm.org/copyright'>OpenStreetMap contributors</a>"
+                           }],
+                           markers: [{
+                               location: [-40.799022, -71.5967414],
+                               shape: "pinTarget",
+                               tooltip: {
+                                   content: "Villa La Angostura, Argentina"
+                               }
+                           }]
+                   });
+               }
+           
+               $(document).ready(createMap);
+               </script>
+         
+         
+         
+           </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     </p>
+    
+    
+     
+     
+     
+     
+        
+        
+    </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

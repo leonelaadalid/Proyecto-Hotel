@@ -1,0 +1,91 @@
+body{
+    background-color: #f8f8f8;
+}
+
+h2{
+    font-size: 2.3rem;
+    font-family: font-family: 'Sansita Swashed', cursive;
+   color: #000000;
+   line-height: 2rem;
+
+
+}
+
+h2 span {
+     font-size: 4rem;
+     font-family:'Sansita Swashed', cursive;
+     color: #60acd0;
+     line-height: 2.4rem;
+}
+
+
+/** Sociales **/
+.sociales ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+.sociales ul li {
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before {
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smoothing: antialiased;
+    font-size: 2rem;
+    color: rgb(8, 9, 9);
+}background-color
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f082';
+}
+.sociales ul li a[href*="api.whatsapp.com/"]::before{
+    content: '\f232';
+
+} 
+
+/** navegacion **/
+.navegacion{
+
+        background-color: #9cbbe2;
+     }
+      .navbar-light .navbar-toggler{
+          background-color: rgb(248, 248, 248);
+      }
+ .navbar-light .navbar-brand ,  
+ .navbar-light .navbar-brand {
+
+   color: rgb(0, 0, 0);
+
+  }
+
+.nav-link{
+ color: rgb(3, 3, 4);
+ font-size: 1.4 rem;
+ transition: background-color .5s ease-in-out;
+ font-family: 'Oswald', sans-serif;
+
+}
+
+.nav-link:hover{
+    background-color: rgb(44, 115, 181);
+    color: white;
+}
+
+.imagen-nosotros img {
+
+    border: 6px solid #ffffff;
+
+
+}
+
+.imagen-nosotros-info {
+    background-color: #ffffff;
+    margin-top: -5rem;
+}
+.imagen-nosotros img:hover {
+    transform:scale(1.2);
+}

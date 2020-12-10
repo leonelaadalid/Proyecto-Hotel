@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+
+    
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.2.714/styles/kendo.common.min.css">
+    <link rel="stylesheet" href="http://kendo.cdn.telerik.com/2016.2.714/styles/kendo.default.min.css">
+    <script src="jquery-1.9.1.min.js"></script>
+    <script src="kendo.all.min.js"></script>
+
+
+
+    
+    
+
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Dobro dosli u najbolji kafic na svetu">
+    <meta name="keywords" content="Kafic">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Hotel Bahía Manzano - Contact Us</title>
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">HOTEL Bahía Manzano </a></h1>
+            <ul>
+                <li><a href="index.html">Inicio </a></li>
+               
+                <li><a href="sobre el hotel.html">Sobre el Hotel</a></li>
+                    <li><a class="current" href=">Reserva .html">Reserva HOY</a></li>
+                    <li><a href="contact.html">Contacto </a></li>
+                    <li><a href="Habitaciones.html">Habitaciones</a></li>
+                </ul>
+              </div>
+            </nav>  
+    </header>
+
+
+     <section id="contact-form" class="py-1">
+         <div class="container">
+            <h1 class="l-heading"><span class="text-primary"> </span>Reserva</h1>
+            <p>Por favor complete todos los espacios para que pueda contactarnos</p>
+          
+
+
+
+            <div class="formulario">
+                <form class="reservar" action="habitaciones.html" method="get">
+                    <div class="fechas">
+                        <span>Fecha de ingreso: </span>
+                        <input type="date" name="fechaInicio" placeholder="dd/mm/aaaa" required autofocus>
+                        <span>Fecha de salida: </span>
+                        <input type="date" name="fechaFin" placeholder="dd/mm/aaaa" required >
+                        <span>Número de húespedes: </span>
+                        <input type="number" name="numeroMascotas" value="0" required>
+                    </div>
+                    <div class="habitacion">
+                        <span>Habitación matrimonial </span>
+                        <input type="checkbox" name="matri" value="Habitación  matrimonial">
+                        <span>Habitación simple </span>
+                        <input type="checkbox" name=" simple" value="Habitación simple ">
+                        <span>Habitación doble</span>
+                        <input type="checkbox" name="doble" value="Habitación doble">
+                    </div>
+                    <div class="btonform">
+                        <input class="btonSubmit" type="submit" value="VERIFICA">
+                        <input class="btonReset" type="reset" value="LIMPIAR">
+                    </div>
+                </form>
+            </div>
+            </div>
+            
+<section>
+</div>
+<script src="idex.js"></script>
+<div class="grilla" style="width: 95%; margin: auto; padding-top: 2rem;">
+    <div id="example">
+        <div id="grid"></div>
+    
+        <script>
+            $(document).ready(function() {
+                $("#grid").kendoGrid({
+                    dataSource: {
+                        data:Capacidad,
+                        schema: {
+                            model: {
+                                fields: {
+                                    Capacidad: { type: "string" },
+                                    Superficie: { type: "string" },
+                                    balcón: { type: "number,string" },
+                                    Caracteritica: { type: "number,string" },
+                                   
+                                }
+                            }
+                        },
+                        pageSize: 4
+                    },
+                    height: "185 px",
+                    scrollable: false,
+                    sortable: false,
+                    filterable: false,
+                    pageable: {
+                        input: false,
+                        numeric: false
+                    },
+                    columns: [
+                        
+                        { field: "Capacidad", title: "Capacidad", width: "230px" },
+                        { field: "Superficie", title: "Superficie", format: "{0:c}", width: "130px" },
+                        { field: "Balcón", title: "Balcón", width: "130px" },
+                        { field: "Caracteritica", title: "Caracteritica", width: "130px" },
+                       
+                        
+                    ]
+                });
+            });
+        </script>
+    </div>
+</div>            
+</section>
+
+     </section>
+     <section id="contact-info" class="bg-dark2">
+        
+            <div class="container">
+            <div class="box ">
+                <i class="fas fa-hotel fa-3x"></i>
+                   <h3>Location</h3>
+                   <p>Alicia M. de Justo 1780, piso 2°, Of. "E"</p>
+               </div>
+               <div class="box">
+                <i class="fas fa-phone fa-3x"></i>
+                <h3>Telefone Number</h3>
+                <p> (0294)4475307/p>
+               </div>
+               <div class="box ">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3>Email Address</h3>
+                <p>club@bahiamanzano.com </p>
+               </div>
+
+
+
+
+
+
+              
+
+         </div>
+
+   
+    </section>
+
+
+
+    <script>
+
+        const imagenes = {
+         '10': 'https://static.vecteezy.com/system/resources/previews/001/500/512/non_2x/cloudy-weather-icon-free-vector.jpg'
+        };
+        
+        const section = document.querySelector("section");
+        const header = document.querySelector("header");
+        //le pido a esta url... 
+        
+        const requestURL="https://ws.smn.gob.ar/map_items/forecast/1";
+        const request = new XMLHttpRequest();
+        
+        //aca le estoy pidiendo a la pagina url : un archivo json//
+        
+        request.open('GET',requestURL);
+        request.responseType = 'json';
+        request.send();
+        
+        //aca le estoy pidiendo 200 respuestas que tengan "rosario" en el nombre
+        //en el listado de arrays que aparece en la consola//
+        
+        request.onload = function() {
+        const localidades = request.response;
+        var dia;
+        var tituloheader;
+        var pronostico;
+        var pronostico_img;
+        for(var i=0; i <=200; i++ )
+        {
+            if(localidades[i]['name']=="Rosario") //Es doble == porque esto significa comparar, un solo = significa asignar un valor. Es distinto.
+            {
+                //console.log(localidades[i]['name']);
+                dia=localidades[i]['weather'];
+                console.log(localidades[i]['name']); //DESCRIPCION DEL CLIMA POR CONSOLA
+                console.log(dia['morning_desc']);   //DESRIPCION DEL CLIMA POR CONSOLA
+        
+                tituloheader = localidades[i]['name'];   
+                pronostico = dia['morning_desc'];
+                pronostico_img = imagenes[dia['morning_id']]
+                
+            }
+        }
+        //aca transformamos la info que nos dio en variable
+        llenarheader(tituloheader);
+        llenarsection(pronostico, pronostico_img);
+        }
+        
+        //LLENAMOS EL HEADEEEEEER AL FIN
+        
+        function llenarheader(tituloheader){
+        const encabezado = document.createElement("article");
+        
+        
+        //creá una constante que se llame encabezado y crea un elemento article
+        const myParal = document.createElement('p'); // tambien un elemento p de parrafo
+        myParal.textContent = 'Localidad ' + tituloheader; // poneme "localidad + el tituloheader , que va a ser la ciudad"
+        encabezado.appendChild(myParal);
+        header.appendChild(encabezado);  // appendChild se usa para ponerle contenido a algo desde js
+        
+        
+        }
+        
+        
+        //LLENAMOS SECTIOOOOOOOOOON
+        
+        function llenarsection(pronostico, pronostico_img){ 
+        const seccion = document.createElement("article");
+        
+        //agregamos la imagen
+        
+        const imagenEle = document.createElement('img');
+        imagenEle.src = pronostico_img;
+        imagenEle.width = 200;
+        imagenEle.height = 200;
+        seccion.appendChild(imagenEle);
+        section.appendChild(seccion);
+        
+        const seccion2 = document.createElement("article");
+        const myPara2 = document.createElement('p');
+        myPara2.textContent = 'Pronostico' + pronostico;
+        seccion2.appendChild(myPara2);
+        section.appendChild(seccion2);
+        }
+        
+       
+        </script>
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
